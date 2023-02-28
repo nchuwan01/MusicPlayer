@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nightingales</title>
+    <link rel="stylesheet" href="./CSS_Music/MyStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav>
+        <ul id="NavHolder">
+            <li id="logo">
+                <img id="logoImg" src="./images/birdie.png"/>
+                <a id="logoTitle">Nightingales</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div id="gridForm">
+        <div id="addForm">
+            <div id = "form_header">
+                <h3>Share Your Fav Music!</h3>
+            </div>
+            <div id="form_image">
+                <div><img id="hold_img" src="images/peopleSharing.png"></div>
+            </div>
+            <div class="get_info" id="getName">
+                <label><b>Your Name: </b> </label>
+                <div> <input type="text" onchange="ArtistChanged()" id="myName" placeholder="Ex: Luis Smith" required/>  </div>
+            </div>
+            <div class="get_info">
+                <label><b>Artist:</b> </label>
+                <div>  <select onchange="ArtistChanged()" id="selectArtist"></select>  </div>
+            </div>
+            <div class="get_info">
+                <label><b>Music:</b> </label>
+                <div> <select id="selectMusic"></select> </div>
+            </div>
+            <div id="bottom_buttons">
+                <div><button class="btn btn-primary" id="add">Add</button></div>
+            </div>
+
+        </div>
+
+            <div id="playlistDiv">
+                    <div class="mainAlbumDiv"></div>
+            </div>
+
+
+
+
+    </div>
+
+    <script rel="script" src="./JS_Music/MyMusicRunner.js"></script>
+</body>
+</html>
